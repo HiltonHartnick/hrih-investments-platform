@@ -1,0 +1,11 @@
+{
+  "name": "hrih-investments-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:scraper": "npm run start --workspace=apps/scraper-service"
+  }
+}

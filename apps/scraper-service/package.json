@@ -1,0 +1,13 @@
+{
+  "name": "scraper-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "playwright": "latest",
+    "axios": "latest",
+    "dotenv": "latest"
+  }
+}
