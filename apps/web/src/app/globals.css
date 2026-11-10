@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --hrih-navy: #0A0F1D;
+  --hrih-midnight: #0B132B;
+  --hrih-gold: #D4AF37;
+  --hrih-amber: #F59E0B;
+  --hrih-surface: #111827;
+  --hrih-border: #1F2937;
+  --smrt16-canvas: #050B14;
+  --smrt16-teal: #00F5D4;
+  --smrt16-mint: #14B8A6;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--hrih-navy);
+  color: #F8FAFC;
+  font-family: Inter, Geist, ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.25);
+}
+
+.hrih-surface {
+  background: var(--hrih-surface);
+  border: 1px solid var(--hrih-border);
+}
+
+.smrt16-glow {
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.25);
+}
