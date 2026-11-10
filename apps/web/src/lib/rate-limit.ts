@@ -1,4 +1,4 @@
-import { randomUUID } from 'node:crypto'
+import { randomUUID, timingSafeEqual } from 'node:crypto'
 
 const LUA = [
   "local now = tonumber(ARGV[1])",
@@ -62,5 +62,5 @@ export function requestIp(request: Request): string {
 export function safeSecretEquals(provided: string, expected: string): boolean {
   const a = Buffer.from(provided)
   const b = Buffer.from(expected)
-  return a.length === b.length && require('node:crypto').timingSafeEqual(a, b)
+  return a.length === b.length && timingSafeEqual(a, b)
 }
